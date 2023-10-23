@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/mcarhuas.ZYTRUSTDC01/Desktop/Taller Seman 3",
-      "program": "c:/Users/mcarhuas.ZYTRUSTDC01/Desktop/Taller Seman 3/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

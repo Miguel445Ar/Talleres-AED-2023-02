@@ -115,6 +115,9 @@
     "xstring": "cpp",
     "xtr1common": "cpp",
     "xutility": "cpp",
-    "queue": "cpp"
-  }
+    "queue": "cpp",
+    "optional": "cpp",
+    "string_view": "cpp"
+  },
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
 }
