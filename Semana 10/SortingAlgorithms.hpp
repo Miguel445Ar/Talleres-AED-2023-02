@@ -51,8 +51,9 @@ private:
     static void recursiveMergeSort(int i, int f, T* arr, function<bool(T,T)> isLowerThan) {
         if(i == f) return;
         int medium = (i + f) / 2;
-        recursiveMergeSort(i, medium);
-        recursiveMergeSort(medium, f);
+        recursiveMergeSort(i, medium, arr, isLowerThan);
+        recursiveMergeSort(medium + 1, f, arr, isLowerThan);
+        mergeHalfs(i, f, medium, arr, isLowerThan);
     }
     static void mergeHalfs(int i, int f, int medium, T* arr, function<bool(T,T)> isLowerThan) {
         size_t size = (f - i) + 1;

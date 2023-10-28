@@ -14,11 +14,10 @@ public:
         for(int i = 0; i < capacity; ++i) _hashTable[i] = nullptr;
     }
     void insert(std::string key, T value) {
-        if(_size == _capacity) throw "Hash table is full";
+        if(_size == computeLimit()) throw "Hash table is full";
         int index = _hashFunction(key);
         if(_hashTable[index] == nullptr) _hashTable[index] = new DoublyLinkedList<Element>();
-        int pos = _hashTable[index]->size() / 2;
-        _hashTable[index]->insertAt(Element{key,value},pos);
+        _hashTable[index]->pushBack(Element{key,value});
         ++_size;
     }
     T& operator[](std::string key) {
@@ -57,12 +56,16 @@ private:
     DoublyLinkedList<Element>** _hashTable;
     size_t _size;
     size_t _capacity;
+    const size_t factor = 5;
 private:
     int _hashFunction(std::string key) {
         int res = 0;
         for(unsigned int i = 0; i < key.length(); ++i)
             res += pow(static_cast<int>(key[i]), i + 1);
         return res % _capacity;
+    }
+    int computeLimit() {
+        return factor * _capacity;
     }
 };
 
