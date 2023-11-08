@@ -4,6 +4,7 @@
 #include <functional>
 #include <cmath>
 #include <algorithm>
+#include <stack>
 
 using std::function;
 
@@ -50,6 +51,28 @@ public:
         }
         return false;
     }
+    bool iterativeErasing(T value) {
+        Node* parent = nullptr;
+        Node* current = _root;
+        bool nodeWasFound = false;
+        while(current) {
+            if(_equalsTo(current->value, value)) {
+                nodeWasFound = true;
+                break;
+            }
+            parente = current;
+            if(_lowerThan(value, current->value)) current = current->left;
+            else current = current->right;
+        }
+        if(!nodeWasFound) return false;
+        std::stack<Node*> visitedNodes;
+        while(current) {
+            // Si es que es un nodo hoja
+            // Si es que es un nodo con un hijo izquierdo
+            // Si es que es un nodo con un hijo derecho
+            // Si es que tiene ambos hijos
+        }
+    }
 private:
     class Node {
     public:
@@ -74,8 +97,8 @@ private:
         }
         if(_lowerThan(value, n->value)) _insert(n->left, value);
         else _insert(n->right, value);
-        balanceSubTree(n);
         updateHeight(n);
+        balanceSubTree(n);
     }
     bool _find(Node* n, T value) {
         if(!n) return false;
@@ -152,6 +175,14 @@ private:
             rightRotation(n);
             return;
         }
+    }
+    std::pair<Node*, Node*> lowestNodeWithParent(Node* n, Node* parent) {
+        Node* aux = n;
+        while(aux->left) {
+            parent = aux;
+            aux = aux->left;
+        }
+        return { aux, parent };
     }
 };
 

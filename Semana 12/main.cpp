@@ -24,7 +24,7 @@ int main() {
     bst.insert(6);
     bst.insert(7);
     bst.insert(8);
-    // std::cout << "Height: " << bst.height();
+    std::cout << "Height: " << bst.height() << "\n";
     // bst.preOrder();
     // bst.inOrder();
     // bst.postOrder();
