@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/HP/Desktop/Accessos Directos/CanalYouTube/Talleres Algoritmos 2023 - 02/Talleres-AED-2023-02/Semana 12",
+      "program": "c:/Users/HP/Desktop/Accessos Directos/CanalYouTube/Talleres Algoritmos 2023 - 02/Talleres-AED-2023-02/Semana 12/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
