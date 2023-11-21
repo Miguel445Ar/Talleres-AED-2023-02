@@ -1,0 +1,19 @@
+﻿  main.cpp
+D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\Grafos\Grafo.h(63,37): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\Grafos\Grafo.h(62,6): message : al compilar la función del miembro clase plantilla "int CGrafo<int,-1>::cantidadArcos(int)"
+D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\Grafos\main.cpp(29,3): message : vea la primera referencia a “CGrafo<int,-1>::cantidadArcos” en “main”
+D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\Grafos\main.cpp(8,34): message : Vea la referencia a la creación de una instancia de clase plantilla "CGrafo<int,-1>" que se está compilando
+D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\Grafos\Grafo.h(45,24): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\Grafos\Grafo.h(44,6): message : al compilar la función del miembro clase plantilla "int CGrafo<int,-1>::cantidadVertices(void)"
+D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\Grafos\main.cpp(27,2): message : vea la primera referencia a “CGrafo<int,-1>::cantidadVertices” en “main”
+D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\Grafos\Grafo.h(41,27): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\Grafos\Grafo.h(37,6): message : al compilar la función del miembro clase plantilla "int CGrafo<int,-1>::adicionarVertice(T)"
+          with
+          [
+              T=int
+          ]
+D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\Grafos\main.cpp(11,21): message : vea la primera referencia a “CGrafo<int,-1>::adicionarVertice” en “main”
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generando código...
+  main.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  Grafos.vcxproj -> D:\UPC\3er Ciclo\Algoritmos y Estructuras de Datos\Semana 13\Grafos\x64\Debug\Grafos.exe

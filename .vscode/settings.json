@@ -119,5 +119,6 @@
     "optional": "cpp",
     "string_view": "cpp"
   },
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "C_Cpp.errorSquiggles": "enabled"
 }
